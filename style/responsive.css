@@ -1,0 +1,85 @@
+@media only screen and (max-width : 768px) {
+    
+}
+
+@media only screen and (max-width : 992px) {
+    .heroSection{
+        flex-direction: column;
+    }
+
+    .heroLeft{
+        max-width: 90%;
+        text-align: center;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .heroButtons{
+        gap: 30px !important;
+        width: 100%;
+        justify-content: center;
+    
+    }
+}
+
+@media only screen and (max-width : 960px) {
+
+    #menu{
+        display: block;
+    }
+
+    #center{
+        display: none;
+    }    
+    
+    li > a , button{
+        display: none;
+    }
+
+    ul{
+        gap: 10px !important;
+    }
+
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .heroVector{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .h1{
+        font-size: 5cqmax;
+        letter-spacing: 0px;
+        line-height: 50px ;
+    }
+
+    .heroLeft{
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .h3{
+        text-align: center;
+    }
+
+    .paraGraph{
+    align-items: center;
+    }
+
+
+    .heroImg{
+        width: calc(100% + 40px);
+    }
+
+}
