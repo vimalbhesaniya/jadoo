@@ -44,6 +44,10 @@
   font-weight: 700;
 }
 
+.fw-6{
+  font-weight: 600;
+}
+
 .caption {
   font-size: 18px;
   color: var(--caption);
@@ -70,6 +74,7 @@
 .h2 {
   color: var(--h2);
   font-size: 50px;
+  font-family: var(--heading1Font);
 }
 
 .primaryRed {
@@ -77,9 +82,58 @@
  
 }
 
+.cardCategory{
+  width: 100%;
+  max-width: 302px;
+  height: 348.91px;
+  position: relative;
+}
+
+.cardCategory div{
+  transition: .3s all;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 50px 0px;
+  background: white;
+  border-radius: 36px;
+  max-width: 267px;  
+}
+
+.rectangele{
+  border-radius: 30px 0px 10px 0px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: var(--primaryRed);
+}
+
+.cardCategory div img{
+  width: 100%;
+  max-width: 92px;
+  height: 78px;
+}
+
+.cardCategory div:hover{
+  filter: drop-shadow(0 60px 50px rgba(0, 0, 0, 0.07));
+}
+
+.caption{
+  color: var(--pFont);
+  font-size: 18px;
+  font-family: var(--regularFont)  !important;
+  line-height: 27px;
+  font-weight: 600;
+}
+
 .h3 {
+  font-family: var(--heading3Font);
   color: var(--h3);
   font-size: 20px;
+  line-height: 27.24px;
 }
 
 .paraGraph {
@@ -87,6 +141,10 @@
   font-size: 16px;
   font-family: var(--regularFont)  !important;
   line-height: 30px;
+}
+
+.lHeight{
+  line-height: 26px !important;
 }
 
 nav a , button , select{
@@ -112,8 +170,19 @@ nav a , button , select{
 }
 
 .w-100{
-  width: 20%;
-  display: flex;
+  width: 100% !important;
+}
+
+.w-75{
+  width: 75% !important;
+}
+
+.w-50{
+  width: 50% !important;
+}
+
+.w-25{
+  width: 25% !important;
 }
 
 .flex {
@@ -134,6 +203,14 @@ nav a , button , select{
 
 .center {
   justify-content: center;
+  align-items: center;
+}
+
+.contentCenter{
+  justify-content: center;
+}
+
+.itemCenter{
   align-items: center;
 }
 
@@ -167,8 +244,8 @@ nav a , button , select{
   top: 0;
   right: 0;
   z-index: -1;
-  width: 766.31px  ;
-  height: 872.58px
+  width: 647.31px  ;
+  height: 630.58px
   ;
 }
 
@@ -182,4 +259,16 @@ nav a , button , select{
 
 .mt-3{
   margin-top: 2.9rem;
+}
+
+.mt-4{
+  margin-top: 3.9rem;
+}
+
+.mt-5{
+  margin-top: 4.9rem;
+}
+
+.mt-6{
+  margin-top: 5.9rem;
 }

@@ -82,4 +82,18 @@
         width: calc(100% + 40px);
     }
 
+    .heroRight{
+        height: 500px;
+    }
+
+    .h2{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width : 300px){
+    .heroRight{
+        height: 400px;
+    }
 }

@@ -1,7 +1,10 @@
 header{
-    width: 100%;
-    max-width: 1160.58px;
     height: 40px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1260.58px;
 }
 
 #menu{
@@ -24,8 +27,6 @@ ul li select{
 
 
 .heroSection{
-    width: 100%;
-    max-width: 1200.87px;
     min-height: 400px;
     /* background-color: cadetblue; */
 }
@@ -34,7 +35,7 @@ ul li select{
     /* background-color: gray; */
     width: 100%;
     max-width: 630px;
-    padding: 0 20px;
+
     position: relative;
     height: 535px;
 }
@@ -46,10 +47,9 @@ ul li select{
 }
 
 .heroRight{
-    /* background-color: gold; */
     width: 100%;
     max-width: 783.87px;
-    height: 764px;
+    height:664px;
     position: relative;
 }
 
@@ -57,6 +57,7 @@ ul li select{
     width:calc(100%  + 100px);
     position: absolute;
     right: 0;
+    height: 100%;
     
 }
 
@@ -97,4 +98,9 @@ ul li select{
     display: flex;
     height: 100%;
     align-items: center;
+}
+
+.categorySection{
+    min-height:525px ;
+    text-align: center;
 }
