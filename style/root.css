@@ -25,6 +25,10 @@
   font-family: var(--regularFont);
 }
 
+.fontRegular{
+  font-family: var(--regularFont) !important;
+}
+
 .btnOrange {
   background-color: var(--primaryOrange) !important;
   color: white !important;
@@ -150,7 +154,10 @@
 }
 
 .section{
-  min-height:525px ;
+  min-height:auto ;
+}
+
+.textCenter{
   text-align: center;
 }
 
@@ -227,6 +234,11 @@ select {
   flex-wrap: wrap;
 }
 
+.start{
+  align-items: start;
+
+}
+
 .spaceBetween {
   justify-content: space-between;
 }
@@ -283,6 +295,10 @@ select {
 
 .mt-1 {
   margin-top: 1rem !important;
+}
+
+.pt-1{
+  padding-top: .5rem !important;
 }
 
 .mt-2 {

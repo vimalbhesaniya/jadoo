@@ -1,119 +1,235 @@
-header{
-    height: 40px;
+header {
+  height: 40px;
 }
 
-.container{
-    width: 100%;
-    max-width: 1260.58px;
+.container {
+  width: 100%;
+  max-width: 1260.58px;
 }
 
-#menu{
-    display: none;
+#menu {
+  display: none;
 }
 
-ul li button{
-    width: 102px;
-    background:transparent ;
-    height: 40px;
-    border-radius: 5px;
+ul li button {
+  width: 102px;
+  background: transparent;
+  height: 40px;
+  border-radius: 5px;
 }
 
-ul li select{
-    outline: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
+ul li select {
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-
-.heroSection{
-    min-height: 400px;
-    /* background-color: cadetblue; */
+.heroSection {
+  min-height: 400px;
+  /* background-color: cadetblue; */
 }
 
-.heroLeft{
-    /* background-color: gray; */
-    width: 100%;
-    max-width: 630px;
+.heroLeft {
+  /* background-color: gray; */
+  width: 100%;
+  max-width: 630px;
 
-    position: relative;
-    height: 535px;
+  position: relative;
+  height: 535px;
 }
 
-.heroCaption{
-    width: 100%;
-    max-width: 477px;
-    min-height: 90px;
+.heroCaption {
+  width: 100%;
+  max-width: 477px;
+  min-height: 90px;
 }
 
-.heroRight{
-    width: 100%;
-    max-width: 783.87px;
-    height:664px;
-    position: relative;
+.heroRight {
+  width: 100%;
+  max-width: 783.87px;
+  height: 664px;
+  position: relative;
 }
 
-.heroImg{
-    width:calc(100%  + 100px);
-    position: absolute;
-    right: 0;
-    height: 100%;
-    
+.heroImg {
+  width: calc(100% + 100px);
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
 
-.planeLeft{
-    position: absolute;
-    height: 69.56px;
-    max-width: 128.04px;
+.planeLeft {
+  position: absolute;
+  height: 69.56px;
+  max-width: 128.04px;
 }
 
-.heroVector{
-    position: absolute;
-    top: 110px;
-    z-index: -1;
-    bottom: auto;
-    left: 281px;
+.heroVector {
+  position: absolute;
+  top: 110px;
+  z-index: -1;
+  bottom: auto;
+  left: 281px;
 }
 
-.heroBtnLeft{
-    width: 100%;
-    max-width: 170px;
-    height: 60px;
-    border-radius: 10px;
-    filter:drop-shadow(0 50px 25px  #f1a50157);
+.heroBtnLeft {
+  width: 100%;
+  max-width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  filter: drop-shadow(0 50px 25px #f1a50157);
 }
 
-.heroBtnRight{
-    width: 100%;
-    border-radius: 50%;
-    max-width: 52px;
-    height: 52px;
-    text-align: center;
-    filter:drop-shadow(0 30px 25px  #f1290157);
+.heroBtnRight {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 52px;
+  height: 52px;
+  text-align: center;
+  filter: drop-shadow(0 30px 25px #f1290157);
 }
 
-.playContainer{
-    width: 100%;
-    max-width: 165px;
+.playContainer {
+  width: 100%;
+  max-width: 165px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+#flight {
+  width: 50px !important;
+  top: 0;
+  left: 0;
+}
+
+.pRel img:nth-child(2) {
+  width: 130px !important;
+  transform: scale(1.7);
+}
+
+#decore {
+  left: 87%;
+  top: 30%;
+}
+
+.bookContainer {
+  /* background-color: red; */
+}
+
+#bookRight {
     display: flex;
-    height: 100%;
+    justify-content: center;
     align-items: center;
 }
 
-
-.pRel img:nth-child(1){
-    width: 50px !important;
-    top: 0;
-    left: 0;
-
+#bgBlue {
+  width: 100%;
+  bottom: 7%;
+  left:6%;
 }
 
-.pRel img:nth-child(2){
-    width: 130px !important;
-    transform: scale(1.7);
+#bookLeft {
+  width: 40% !important;
 }
 
-#decore{
-    left: 87%;
-    top: 30%;
+.tripCard {
+  width: 100%;
+  max-width: 485px;
+  height: auto;
+  position: relative;
+}
+
+.tripCardDetails {
+  
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  max-width: 370px;
+  height: auto;
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.097));
+  border-radius: 24px;
+}
+
+.tripImage {
+  width: 100%;
+  max-width: 321px;
+  height: 161px;
+}
+
+.tripImage img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.tripDetail {
+  width: 100%;
+  height: calc(100% - 161px);
+}
+
+#circleContainer {
+  width: 139px;
+}
+
+.circle {
+  width: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  height: 36px;
+  background-color: #f5f5f5;
+}
+
+.flex i {
+  color: #4152ca;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cardStatus {
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.097));
+  width: 100%;
+  max-width: 263px;
+  /* height: 129px; */
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 49%;
+  left: 56%;
+}
+
+.cardStatus div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+}
+
+.tripPicture img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.progressBar {
+  width: 100%;
+  max-width: 156px;
+  height: 5px;
+  border-radius: 30px;
+  background: #f5f5f5;
+  margin-top: 5px;
+}
+
+.line {
+  width: 50% !important;
+  border-radius: 30px;
+  height: 100% !important;
+  background: #8a79df;
+}
+
+#statusRight {
 }
