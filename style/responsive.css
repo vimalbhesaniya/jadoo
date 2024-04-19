@@ -105,15 +105,13 @@
     left: 50%;
     bottom: 0;
     flex-direction: row;
+    justify-content: center !important;
   }
 
   .navigation button i {
     rotate: -90deg;
   }
 
-  .flex{
-    justify-content: center;
-  }
   .feedBackLeft{
     width: 90%;
     text-align: center;
