@@ -1,5 +1,8 @@
 header {
-  height: 40px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -122,6 +125,8 @@ ul li select {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 485px;
 }
 
 #bgBlue {
@@ -131,7 +136,7 @@ ul li select {
 }
 
 #bookLeft {
-  width: 40% !important;
+  width: 47% !important;
 }
 
 .tripCard {
@@ -232,4 +237,119 @@ ul li select {
 }
 
 #statusRight {
+}
+
+.feedBackLeft{
+  width: 50%;
+}
+
+.feedBackRight{
+  width: 100%;
+  max-width: 669px;
+  height: 356px;
+}
+
+#feedBackLeft{
+  width: auto;
+}
+
+.dot{
+  max-width: 100%;
+  width: 12px;
+  height: 12px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.dot:hover{
+
+}
+
+.feedBackContainer{
+  width: 100%;
+  max-width: 669px;
+  height: 356px;
+}
+
+.feedBackCard{
+  width: 100%;
+  max-width: 541px;
+  min-height: 279px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.topCard{
+  z-index: 123;
+  filter: drop-shadow(0 48.15px 36.52px rgba(0, 0, 0, 0.083));
+}
+
+.behindCard{
+  bottom: 0;
+  right: 14%;
+  width: 100%;
+  max-width: 502px !important;
+  min-height: 232px !important;
+  border: 2px solid #F7F7F7;
+  animation: slideBehind 1s forwards;
+}
+
+.topInner{
+  background: white;
+  max-width: 504px !important;
+  min-height: 245px !important;
+  bottom: 0;
+  animation: slide 1s forwards;
+}
+
+.navigation{
+  z-index: 1312;
+  right: 0;
+  top: 115px;
+  bottom: 50%;
+  transform: translate(-50% , 50%);
+}
+
+#disabled{
+  color: #BCB7C2 !important;
+}
+
+
+.navigation button  i{
+  color: black !important;
+}
+
+.profilePicture{
+  width: 68px;
+  height: 68px;
+  z-index: 1123;
+  object-fit:  cover;
+}
+
+.profilePicture img{
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0 , 50%);
+    scale: 0;
+  }
+  to{
+    transform: translate(0 , 0);
+    scale: 100%;
+  }
+}
+
+@keyframes slideBehind {
+  from {
+    opacity: .5;
+    transform: translate(0 , -50%);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0 , 0);
+  }
+  
 }

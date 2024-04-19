@@ -2,11 +2,29 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+  .w-75 {
+    width: 90% !important;
+  }
+
+  .spaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    flex-flow: column;
+  }
+
   #bookRight {
     width: 100% !important;
   }
   .heroSection {
     flex-direction: column;
+  }
+
+  .feedContainer{
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
   }
 
   .heroLeft {
@@ -60,16 +78,18 @@
     text-align: center !important;
   }
 
-  .w-75 {
-    width: 90% !important;
-  }
 }
 @media only screen and (max-width: 1280px) {
-  .container {
+  .cardContainer {
+    max-width: 992px;
+  }
+
+  .container{
     max-width: 992px;
   }
 }
 @media only screen and (max-width: 768px) {
+
   .tripImage {
     height: auto;
   }
@@ -172,13 +192,22 @@
     font-size: 27px;
   }
 
-  .ellips-2 {
+  .ellips {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  
+  .e-2{
+    -webkit-line-clamp: 2;
+  }
+  
+  .e-3{
+    
+    -webkit-line-clamp: 3;
+  }
+
 
   #decore {
     display: none;

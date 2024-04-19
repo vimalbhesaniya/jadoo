@@ -71,6 +71,7 @@
   display: block !important;
   font-weight: 300 !important;
   line-height: 22.9px !important;
+  background: transparent;
 }
 
 .h1 {
@@ -324,6 +325,12 @@ select {
 .mb-1{
   margin-bottom: 5rem;
 }
+
+.cardContainer{
+  width: 100%;
+  max-width: 1202px !important;
+}
+
 .cardDestination {
   width: 100%;
   max-width: 315px;
@@ -361,4 +368,21 @@ select {
 
 .cardFooter p:nth-child(2) {
   place-self: end;
+}
+
+
+.ellips {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.e-2{
+  -webkit-line-clamp: 2;
+}
+
+.e-3{
+  
+  -webkit-line-clamp: 3;
 }

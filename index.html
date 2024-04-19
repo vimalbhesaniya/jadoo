@@ -19,7 +19,7 @@
 <body>
   <img src="images/bgTop.svg" class="bgTop" alt="" />
   <section class="alignCenter column">
-    <header class="flex container spaceBetween alignCenter wrap">
+    <header class="flex cardContainer wrap">
       <div id="left">
         <img src="logo/logo.svg" alt="" />
       </div>
@@ -47,7 +47,7 @@
       </nav>
     </header>
 
-    <section class="heroSection container alignCenter spaceAround">
+    <section class="heroSection cardContainer alignCenter spaceAround">
       <div class="heroLeft">
         <img src="images/heroVector.svg" class="heroVector" alt="" />
         <h3 class="h3 primaryRed upper fw-7">
@@ -127,10 +127,10 @@
       </div>
     </section>
 
-    <section class="section textCenter container mt-6 flex column">
+    <section class="textCenter container alignCenter mt-6 flex column">
       <p class="caption">Top Selling</p>
       <h2 class="h2">Top Destinations</h2>
-      <div class="container alignCenter g-4 wrap mt-6">
+      <div class="container spaceAround flex cardContainer g-4 wrap mt-6">
         <div class="cardDestination">
           <div class="cardHeader">
             <img
@@ -169,17 +169,17 @@
       </div>
     </section>
 
-    <section class="section container  mt-1 flex column mb-1">
-      <div class="container flex alignCenter bookContainer g-4 mt-6">
+    <section class="section cardContainer mt-1 flex column mb-1">
+      <div class="cardContainer flex spaceBetween wrap g-4 mt-6">
         <div class="" id="bookLeft">
           <p class="caption">Easy and Fast</p>
           <h2 class="h2">Book your next trip in 3 easy steps</h2>
-          <div class="alignCenter column">
+          <div class="spaceBetween cardContainer column">
             <div class="flex mt-2 g-2">
               <img src="images/destination.svg" alt="" />
               <div class="w-75">
                 <h4 class="caption">Choose Destination</h4>
-                <p class="paraGraph ellips-2" style="line-height: 19.92px; font-weight: 300">
+                <p class="paraGraph ellips e-2" style="line-height: 19.92px; font-weight: 300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Urna, tortor tempus.
                 </p>
@@ -189,7 +189,7 @@
               <img src="images/payment.svg" alt="" />
               <div class="w-75">
                 <h4 class="caption">Make Payment</h4>
-                <p class="paraGraph ellips-2" style="line-height: 19.92px; font-weight: 300">
+                <p class="paraGraph ellips e-2" style="line-height: 19.92px; font-weight: 300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Urna, tortor tempus.
                 </p>
@@ -199,7 +199,7 @@
               <img src="images/airport.svg" alt="" />
               <div class="w-75">
                 <h4 class="caption">Reach Airport on Selected Date</h4>
-                <p class="paraGraph ellips-2" style="line-height: 19.92px; font-weight: 300">
+                <p class="paraGraph ellips e-2" style="line-height: 19.92px; font-weight: 300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Urna, tortor tempus.
                 </p>
@@ -207,7 +207,7 @@
             </div>
           </div>
         </div>
-        <div class="" id="bookRight" style="width: 40% ">
+        <div class="" id="bookRight">
           <div class="tripCard pRel">
             <img src="images/blueBg.svg" class="PAbso" id="bgBlue" alt="" />
             <div class="tripCardDetails flex column itemCenter g-3">
@@ -216,7 +216,7 @@
                   src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75"
                   alt="" />
               </div>
-              <div class="tripDetail">
+              <div class="tripDetail spaceBetween">
                 <h4 class="h3 fontRegular" style="color: #080809; font-weight: 400">
                   Trip To Greece
                 </h4>
@@ -269,7 +269,69 @@
         </div>
       </div>
     </section>
+
+    <section class="section cardContainer container mt-1 flex column mb-1">
+      <div class="flex spaceBetween cardContainer g-5">
+        <div class="feedBackLeft" id="">
+          <p class="caption">Testimonials</p>
+          <h2 class="h2">What people say about Us.</h2>
+          <div class="flex mt-2 g-2">
+            <div class="flex start g-3 mt-3">
+              <div class="dot" id=""></div>
+              <div class="dot" id=""></div>
+              <div class="dot" id=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="feedBackRight" id="">
+          <div class="feedBackContainer pRel">
+            <div class="profilePicture PAbso">
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQHwaJm0ToXT5Q/profile-displayphoto-shrink_800_800/0/1601131123702?e=2147483647&v=beta&t=jTyW7Uz3_TqDvsaLbEUX7RQTQF5b94wxc-bclHB8G4s"
+                alt="" />
+            </div>
+            <div class="navigation PAbso flex g-3 column">
+              <button class="btn" id="prev" onclick="handlePrevius()">
+                <i class="fa-solid fa-chevron-up" id="disabled"></i>
+              </button>
+              <button class="btn" id="next" onclick="handleNext()">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="feedBackCard PAbso topCard flex column itemCenter g-3" id="feedback" >
+              <div class="topInner PAbso feedBackCard flex column g-2">
+                <q class="paraGraph ellips e-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestias odio iure ex velit, natus rem, corporis fugit
+                  maxime, ullam aspernatur officia eveniet quidem soluta! Vel
+                  est similique consectetur ea porro? On the Windows talking
+                  painted pasture yet its express parties use. Sure last upon
+                  he same as knew next. Of believed or diverted no.
+                </q>
+                <h5 class="caption">Mike taylor</h5>
+                <p class="paraGraph" style="line-height: 0">
+                  Lahore, Pakistan
+                </p>
+              </div>
+            </div>
+            <div class="behindCard PAbso feedBackCard flex column g-2">
+              <q class="paraGraph ellips e-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias odio iure ex velit, natus rem, corporis fugit
+                maxime, ullam aspernatur officia eveniet quidem soluta! Vel
+                est similique consectetur ea porro? On the Windows talking
+                painted pasture yet its express parties use. Sure last upon he
+                same as knew next. Of believed or diverted no.
+              </q>
+              <h5 class="caption">Mike taylor</h5>
+              <p class="paraGraph" style="line-height: 0">Lahore, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
+  <script src="script.js"></script>
 </body>
 
 </html>
