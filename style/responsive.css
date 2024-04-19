@@ -1,13 +1,22 @@
-@media only screen and (max-width: 768px) {
-}
 
 @media only screen and (max-width: 992px) {
 
+  .feedBackLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .stars {
+    display: none;
+  }
   .w-75 {
     width: 90% !important;
   }
 
-  .spaceBetween{
+  .spaceBetween {
     display: flex;
     align-items: center;
     justify-content: center !important;
@@ -21,7 +30,7 @@
     flex-direction: column;
   }
 
-  .feedContainer{
+  .feedContainer {
     justify-content: center;
     align-items: center;
     flex-flow: column;
@@ -77,24 +86,59 @@
   h2 {
     text-align: center !important;
   }
-
 }
 @media only screen and (max-width: 1280px) {
+  .stars {
+    right: 2%;
+  }
   .cardContainer {
-    max-width: 992px;
+    max-width: 992px !important;
   }
 
-  .container{
-    max-width: 992px;
+  .container {
+    max-width: 992px !important;
   }
 }
 @media only screen and (max-width: 768px) {
+  .navigation{
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    flex-direction: row;
+  }
+
+  .navigation button i {
+    rotate: -90deg;
+  }
+
+  .flex{
+    justify-content: center;
+  }
+  .feedBackLeft{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .feedBackContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .backCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 
   .tripImage {
     height: auto;
   }
 
-  .paraGraph{
+  .paraGraph {
     font-size: 14px;
   }
 
@@ -159,6 +203,36 @@
   .h2 {
     text-align: center;
   }
+
+  .behindCard{
+    position: relative;
+    width: 90% !important;
+    right: auto;
+    bottom: auto;
+  }
+
+  .topCard{
+    width: 90%;
+  }
+
+
+  @keyframes slide {
+    from {
+      transform: translate(100%, 0%);
+    }
+    to {
+      transform: translate(0%, 0);
+    }
+  }
+
+  @keyframes slideBehind {
+    from {
+      transform: translate(-100%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -198,16 +272,14 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
-  .e-2{
+
+  .e-2 {
     -webkit-line-clamp: 2;
   }
-  
-  .e-3{
-    
+
+  .e-3 {
     -webkit-line-clamp: 3;
   }
-
 
   #decore {
     display: none;

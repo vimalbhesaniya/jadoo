@@ -76,7 +76,8 @@
       </div>
     </section>
 
-    <section class="section textCenter container mt-6 flex column">
+    <section class="section textCenter container pRel mt-6 flex column">
+      <img src="images/stars.svg" class="stars PAbso" alt="">
       <p class="caption upper">category</p>
       <h2 class="h2">We Offer Best Services</h2>
       <div class="container alignCenter g-1 wrap mt-4">
@@ -274,7 +275,11 @@
       <div class="flex spaceBetween cardContainer g-5">
         <div class="feedBackLeft" id="">
           <p class="caption">Testimonials</p>
-          <h2 class="h2">What people say about Us.</h2>
+          <div class="writer">
+            <h2 class="h2 animation" id="textSlider">What people say about us</h2>
+            <!-- <h2 class="h2 animation" id="textSlider">Is there any problem ?</h2>
+            <h2 class="h2 animation" id="textSlider">why people like us?</h2> -->
+          </div>
           <div class="flex mt-2 g-2">
             <div class="flex start g-3 mt-3">
               <div class="dot" id=""></div>
@@ -285,47 +290,21 @@
         </div>
         <div class="feedBackRight" id="">
           <div class="feedBackContainer pRel">
-            <div class="profilePicture PAbso">
-              <img
-                src="https://media.licdn.com/dms/image/C5603AQHwaJm0ToXT5Q/profile-displayphoto-shrink_800_800/0/1601131123702?e=2147483647&v=beta&t=jTyW7Uz3_TqDvsaLbEUX7RQTQF5b94wxc-bclHB8G4s"
-                alt="" />
+            <div class="profilePicture PAbso" id="profileContainer">
+              <img src="" id="profile"/>
             </div>
             <div class="navigation PAbso flex g-3 column">
               <button class="btn" id="prev" onclick="handlePrevius()">
-                <i class="fa-solid fa-chevron-up" id="disabled"></i>
+                <i class="fa-solid fa-chevron-up" id="up"></i>
               </button>
               <button class="btn" id="next" onclick="handleNext()">
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down" id="down"></i>
               </button>
             </div>
-            <div class="feedBackCard PAbso topCard flex column itemCenter g-3" id="feedback" >
-              <div class="topInner PAbso feedBackCard flex column g-2">
-                <q class="paraGraph ellips e-3">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Molestias odio iure ex velit, natus rem, corporis fugit
-                  maxime, ullam aspernatur officia eveniet quidem soluta! Vel
-                  est similique consectetur ea porro? On the Windows talking
-                  painted pasture yet its express parties use. Sure last upon
-                  he same as knew next. Of believed or diverted no.
-                </q>
-                <h5 class="caption">Mike taylor</h5>
-                <p class="paraGraph" style="line-height: 0">
-                  Lahore, Pakistan
-                </p>
-              </div>
+            <div class="feedBackCard PAbso topCard flex column itemCenter g-3" id="feedback">
             </div>
-            <div class="behindCard PAbso feedBackCard flex column g-2">
-              <q class="paraGraph ellips e-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Molestias odio iure ex velit, natus rem, corporis fugit
-                maxime, ullam aspernatur officia eveniet quidem soluta! Vel
-                est similique consectetur ea porro? On the Windows talking
-                painted pasture yet its express parties use. Sure last upon he
-                same as knew next. Of believed or diverted no.
-              </q>
-              <h5 class="caption">Mike taylor</h5>
-              <p class="paraGraph" style="line-height: 0">Lahore, Pakistan</p>
-            </div>
+            <div id="backCard"></div>
+           
           </div>
         </div>
       </div>
