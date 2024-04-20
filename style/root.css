@@ -59,10 +59,6 @@
   font-weight: 600;
 }
 
-.caption {
-  font-size: 18px;
-  color: var(--caption);
-}
 
 .btn {
   outline: none;
@@ -163,7 +159,7 @@
 }
 
 .caption {
-  color: var(--pFont);
+  color: var(--caption);
   font-size: 18px;
   font-family: var(--regularFont) !important;
   line-height: 27px;

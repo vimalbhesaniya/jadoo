@@ -136,3 +136,28 @@ if (i === 0) {
   disableButtons(i);
   displayBackCard(i + 1, "back");
 }
+
+
+
+three.classList.remove("activeDot")
+one.classList.add("activeDot")
+function changeText() {
+    setTimeout(()=>{
+        three.classList.remove("activeDot")
+        one.classList.remove("activeDot")
+        document.getElementById("sliderText").innerHTML = "What people say about us?"
+        one.classList.add("activeDot")
+    } , 5000);
+    setTimeout(()=>{
+        one.classList.remove("activeDot")
+        document.getElementById("sliderText").innerHTML = "Why People Like Us?"
+        two.classList.add("activeDot")
+    } , 10000);
+    setTimeout(()=>{
+        two.classList.remove("activeDot")
+        document.getElementById("sliderText").innerHTML = "Is There Any problem?"
+        three.classList.add("activeDot")
+        changeText()
+    } , 15000);
+}
+changeText()
