@@ -258,7 +258,15 @@ select {
 }
 
 .spaceAround {
-  justify-content: space-around !important;
+  justify-content: space-around ;
+}
+
+.beetWeen{
+  justify-content: space-evenly;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly ;
 }
 
 .g-1 {
@@ -382,3 +390,4 @@ select {
   
   -webkit-line-clamp: 3;
 }
+

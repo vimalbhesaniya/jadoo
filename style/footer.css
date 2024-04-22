@@ -1,0 +1,255 @@
+* {
+  list-style: none;
+}
+.footerCard {
+  width: 80%;
+  height: 420px;
+  background-color: var(--primaryColorGreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.curveSvgVerticle {
+  position: absolute;
+  rotate: 90deg;
+  left: 30px;
+  bottom: 70px;
+}
+
+.footerContainer {
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerChild {
+  width: 80%;
+}
+
+.footerChild {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.footerMenus {
+  width: 100%;
+  max-width: 207px;
+  min-height: 242px;
+  padding: 30px 0;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.footerMenus:first-child {
+  flex: 1 0 250px;
+}
+
+.footerHeader {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #181433;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.footerCaption {
+  font-size: 0.8rem;
+  color: #757095;
+  font-weight: 300;
+  width: 80%;
+  margin-top: 20px;
+}
+
+
+
+.shareIcon {
+  margin-top: 20px;
+  color: #3734a9;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+ul li {
+  font-weight: 400;
+  color: #3f3c53;
+  padding: 8px 0;
+  font-size: 0.8rem;
+}
+
+.ellips {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.devider {
+  background-color: #a5a5a521;
+  width: 100%;
+  height: 2px;
+  border-radius: 100px;
+  margin: 30px 30px;
+}
+
+.copyrightText {
+  text-align: center;
+  color: #181433;
+  letter-spacing: -2%;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 1.5cap;
+  margin-bottom: 30px;
+}
+
+.choiceBadge {
+  position: absolute;
+  background: #282828;
+  padding: 16px 32px;
+  border-radius: 80px;
+  color: white;
+  width: fit-content;
+  font-weight: 200;
+  top: -30px;
+  right: -50px;
+  white-space: nowrap;
+}
+
+.menu {
+    font-size: 1.4rem;
+}
+
+.mobileSidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    display: none;
+}
+
+.open{
+    display: flex;
+}
+
+#close{
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 33px;
+    right: 33px;
+}
+
+.mobileNavlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    color: white !important;
+}
+
+a:active{
+  color: #3734a9;
+}
+
+/* .leftCurve{
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+
+.rigthCurve{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+} */
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .curveSvg {
+    display: none;
+  }
+  .curveSvgVerticle {
+    display: none;
+  }
+  .cardHeader {
+    font-size: 1.5rem;
+  }
+  .patternSvg {
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerCard {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .choiceBadge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 26px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footerHeader {
+    margin-top: 10px;
+  }
+
+  .footerMenus {
+    padding: 15px 0;
+  }
+
+  .footerCard {
+    margin-top: 600px;
+  }
+
+  .footerMenus:first-child {
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root{
+    --H1 : 30px;
+  }
+
+  .heroTitle{
+    font-size: 27px;
+  }
+  ul li{
+    font-size: 15px;
+  }
+ 
+}

@@ -1,354 +1,382 @@
 @media only screen and (max-width: 992px) {
-    #rectengleCard h2{
-        font-size: 22px !important  ;
-    } 
+  #rectengleCard h2 {
+    font-size: 22px !important  ;
+  }
 
-    .feedBackLeft {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 90%;
-    }
+  .feedBackLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
 
-    .stars {
-        display: none;
-    }
+  .stars {
+    display: none;
+  }
 
-    .w-75 {
-        width: 90% !important;
-    }
+  .w-75 {
+    width: 90% !important;
+  }
 
-    .spaceBetween {
-        display: flex;
-        align-items: center;
-        justify-content: center !important;
-        flex-flow: column;
-    }
+  .spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    flex-flow: column;
+  }
 
-    #bookRight {
-        width: 100% !important;
-    }
+  #bookRight {
+    width: 100% !important;
+  }
 
-    .heroSection {
-        flex-direction: column;
-    }
+  .heroSection {
+    flex-direction: column;
+  }
 
-    .feedContainer {
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
-    }
+  .feedContainer {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
 
-    .heroLeft {
-        max-width: 90%;
-        text-align: center;
-        height: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
+  .heroLeft {
+    max-width: 90%;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .heroButtons {
-        gap: 30px !important;
-        width: 100%;
-        justify-content: center;
-    }
+  .heroButtons {
+    gap: 30px !important;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 960px) {
-    #menu {
-        display: block;
-    }
+  #center {
+    display: none;
+  }
 
-    #center {
-        display: none;
-    }
+  li > a,
+  button {
+    display: none;
+  }
 
-    li>a,
-    button {
-        display: none;
-    }
+  ul {
+    gap: 10px !important;
+  }
 
-    ul {
-        gap: 10px !important;
-    }
+  header {
+    padding: 0 30px;
+  }
 
-    header {
-        padding: 0 30px;
-    }
+  .bookContainer {
+    flex-flow: column !important;
+    padding: 20px;
+  }
 
-    .bookContainer {
-        flex-flow: column !important;
-        padding: 20px;
-    }
+  #bookLeft {
+    width: 100% !important;
+  }
 
-    #bookLeft {
-        width: 100% !important;
-    }
-
-    #bookLeft>p,
-    h2 {
-        text-align: center !important;
-    }
+  #bookLeft > p,
+  h2 {
+    text-align: center !important;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-    .stars {
-        right: 2%;
-    }
+  .stars {
+    right: 2%;
+  }
 
-    .cardContainer {
-        max-width: 992px !important;
-    }
+  .cardContainer {
+    max-width: 992px !important;
+  }
 
-    .container {
-        max-width: 992px !important;
-    }
+  .container {
+    max-width: 992px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .navigation {
-        right: 50%;
-        left: 50%;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center !important;
+  #rectengleCard {
+    padding: 70px 20px;
+    margin-top: 30px;
+    align-self: center;
+    width: 95% !important;
+  }
+  .cardContainer{
+    width: 90%;
+    max-width: 90%;
+  }
+  @keyframes slideText {
+    0% {
+      opacity: 0;
+      transform: translate(-15%, 0);
     }
 
-    .navigation button i {
-        rotate: -90deg;
+    40%,
+    50%,
+    60%,
+    70%,
+    80% {
+      opacity: 1;
+      transform: translate(0, 0);
     }
 
-    .feedBackLeft {
-        width: 90%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    100% {
+      opacity: 0;
+      transform: translate(15%, 0);
+    }
+  }
+
+  .navigation {
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+
+  .navigation button i {
+    rotate: -90deg;
+  }
+
+  .feedBackLeft {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .feedBackContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  #backCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tripImage {
+    height: auto;
+  }
+
+  .paraGraph {
+    font-size: 14px;
+  }
+
+  .heroVector {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  #bgBlue {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+  }
+
+  .tripCard {
+    display: grid;
+    place-items: center;
+  }
+
+  .cardStatus {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 5cqmax;
+    letter-spacing: 0px;
+    line-height: 50px;
+  }
+
+  .heroLeft {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .h3 {
+    text-align: center;
+  }
+
+  .paraGraph {
+    align-items: center;
+  }
+
+  .heroImg {
+    width: calc(100% + 40px);
+  }
+
+  .heroRight {
+    height: 500px;
+  }
+
+  .h2 {
+    text-align: center;
+  }
+
+  .behindCard {
+    position: relative;
+    width: 90% !important;
+    right: auto;
+    bottom: auto;
+  }
+
+  .topCard {
+    width: 90%;
+  }
+
+  @keyframes slide {
+    from {
+      transform: scale(0%);
     }
 
-    .feedBackContainer {
-        display: flex;
-        justify-content: center;
+    to {
+      transform: scale(100%);
+    }
+  }
+
+  @keyframes slideBehind {
+    from {
+      transform: scale(100%);
     }
 
-    #backCard {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    to {
+      transform: scale(0);
     }
-
-
-
-    .tripImage {
-        height: auto;
-    }
-
-    .paraGraph {
-        font-size: 14px;
-    }
-
-    .heroVector {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        bottom: 0;
-    }
-
-    #bgBlue {
-        position: absolute;
-        bottom: auto;
-        left: auto;
-    }
-
-    .tripCard {
-        display: grid;
-        place-items: center;
-    }
-
-    .cardStatus {
-        position: static;
-        width: 100%;
-        max-width: 100%;
-        justify-content: space-between;
-        flex-flow: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .h1 {
-        font-size: 5cqmax;
-        letter-spacing: 0px;
-        line-height: 50px;
-    }
-
-    .heroLeft {
-        height: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .h3 {
-        text-align: center;
-    }
-
-    .paraGraph {
-        align-items: center;
-    }
-
-    .heroImg {
-        width: calc(100% + 40px);
-    }
-
-    .heroRight {
-        height: 500px;
-    }
-
-    .h2 {
-        text-align: center;
-    }
-
-    .behindCard {
-        position: relative;
-        width: 90% !important;
-        right: auto;
-        bottom: auto;
-    }
-
-    .topCard {
-        width: 90%;
-    }
-
-
-    @keyframes slide {
-        from {
-
-            transform: scale(0%);
-        }
-
-        to {
-
-            transform: scale(100%);
-        }
-    }
-
-    @keyframes slideBehind {
-        from {
-            transform: scale(100%);
-        }
-
-        to {
-            transform: scale(0);
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .discoverContainer {
+    align-self: center !important;
+  }
 
-    #rectengleCard{
-        padding: 70px 20px;
-        margin-top: 30px;
-    }
-    
-    #companyLogos{
-        overflow: auto;
-        flex-flow: row;
-    }
-    
-    @keyframes slideText {
-        0% {
-            opacity: 0;
-            transform: translate(-15%, 0);
-        }
+  footer {
+    justify-content: left !important;
+    align-items: baseline;
+    text-align: left;
+    padding-left: 10px;
+    flex-direction: column;
+  }
 
-        40%,
-        50%,
-        60%,
-        70%,
-        80% {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
 
-        100% {
-            opacity: 0;
-            transform: translate(15%, 0);
-        }
-    }
 
-    .cardDestination {
-        width: 90%;
-        max-width: auto;
-    }
+  #companyLogos {
+    overflow: auto;
+    flex-flow: row;
+  }
 
-    .cardCategory {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 284px;
-    }
+  .cardDestination {
+    width: 90%;
+    max-width: auto;
+  }
 
-    #cardInnerDiv {
-        width: 90%;
-        position: absolute;
-        top: auto;
-        right: auto;
-        margin-top: 20px;
-    }
+  .cardCategory {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 284px;
+  }
 
-    .rectangele {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
+  #cardInnerDiv {
+    width: 90%;
+    position: absolute;
+    top: auto;
+    right: auto;
+    margin-top: 20px;
+  }
 
-    .h2 {
-        font-size: 20px;
-    }
+  .rectangele {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-    .ellips {
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
+  .h2 {
+    font-size: 20px;
+  }
 
-    .e-2 {
-        -webkit-line-clamp: 2;
-    }
+  .ellips {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
-    .e-3 {
-        -webkit-line-clamp: 3;
-    }
+  .e-2 {
+    -webkit-line-clamp: 2;
+  }
 
-    #decore {
-        display: none;
-    }
+  .e-3 {
+    -webkit-line-clamp: 3;
+  }
+
+  #decore {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 300px) {
-    .heroRight {
-        height: 400px;
-    }
+  header{
+    width: 100% !important;
+  }
+  .heroRight {
+    height: 400px;
+  }
 
-    #decore {
-        left: 30%;
-        top: 80%;
-        rotate: 90deg;
-        width: 75px;
-    }
+  #decore {
+    left: 30%;
+    top: 80%;
+    rotate: 90deg;
+    width: 75px;
+  }
 }
 
-@media only screen and (min-width: 1022px) and (max-width: 1140px) {
-    /* #decore {
-    left: 30%;
-    top: 75%;
-    rotate: 90deg;
-    width: 100px;
-  } */
+@media only screen and (max-width: 1015px) {
+  #center {
+    display: none;
+  }
+
+  li > a,
+  button {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .cardContainer {
+    max-width: 768px !important;
+  }
+  .container {
+    max-width: 768px !important;
+  }
+
+  .starsBottom {
+    display: none;
+  }
 }
