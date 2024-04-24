@@ -161,3 +161,9 @@ function changeText() {
     } , 15000);
 }
 changeText()
+
+
+function handleSidebar() {
+  let sidebar = document.getElementById("aside")
+  sidebar.classList.toggle("open")
+}

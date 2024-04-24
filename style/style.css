@@ -544,6 +544,9 @@ ul li select {
   color: white;
 }
 
+.open{
+  display: none !important;
+}
 
 .ios{
   width: 100%;
